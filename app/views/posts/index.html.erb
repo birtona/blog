@@ -6,8 +6,10 @@
           <h2><%= link_to post.title, post_path(post) %></h2>
           <p><%= post.content %></p>
           <small><%= post.created_at.strftime("geschrieben am %d.%m.%Y") %></small>
-      <% end %>
-
+          <small>von <%= post.author.name %></small>
+          <br>
+          <br>
+    <% end %>
     </div>
   </div>
 </div>
