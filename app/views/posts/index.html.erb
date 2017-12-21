@@ -5,7 +5,7 @@
       <% Post.all.each do |post|%>
           <h2><%= post.title %></h2>
           <p><%= post.content %></p>
-          <small><%= post.created_at %></small>
+          <small><%= post.created_at.strftime("geschrieben am %d.%m.%Y") %></small>
       <% end %>
 
     </div>
