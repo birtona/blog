@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   resources :posts, only: [:index, :show]
+  resources :authors, only: [:show]
 
   root to: 'posts#index'
 
