@@ -49,15 +49,6 @@ ActiveRecord::Schema.define(version: 20171221145201) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "blog_comments", force: :cascade do |t|
-    t.text "content"
-    t.integer "post_id"
-    t.string "author_name"
-    t.boolean "published"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "content"
